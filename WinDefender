@@ -1,0 +1,12 @@
+1. To Disable Windows Defender using Command 
+
+Open CMD as Administrator and run the below command to disable Windows Defender Permanently
+ 
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+
+
+2. To Enable Windows Defender using Command 
+
+Run this Command in CMD to Enable Windows Defender Again
+
+ Reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 0 /f
