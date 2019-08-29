@@ -1,0 +1,5 @@
+"C:\Program Files (x86)\Alterdata\Backup-Service\pg_dump.exe" --host=192.168.1.249 --username "postgres" --blobs --format custom --verbose --file="C:\Backup\Backup Alterdata\Auto\backupalterdata.dmp" -F c "ALTERDATA_PACK"
+
+rename "C:\Backup\Backup Alterdata\Auto\backupalterdata.dmp" BKP_Auto_Alterdata_%time:~0,2%%time:~3,2%%time:~6,2%_%date:~-10,2%%date:~-7,2%%date:~-4,4%.backup_postgresql
+
+by Mowllian
